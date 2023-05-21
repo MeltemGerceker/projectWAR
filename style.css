@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   color: white;
+   font-family: 'Open Sans', sans-serif;;
+}
+
+section {
+    height: 100vh;
+    background-color: black;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+header nav ul {
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: crimson;
+    text-shadow: 2px 2px 10px crimson;
+}
+
+/* Welcome Section */
+#welcome-sec {
+    background-image: url(/images/main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.welcome-text {
+    width: 90vw;
+    margin: 200px auto;
+}
+
+.welcome-text h1 {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+
+.welcome-text p {
+    max-width: 700px;
+    margin: 90px auto;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* Section - 1 */
+#sec1 {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+#sec1 .left {
+    max-width: 600px;
+}
+
+#sec1 .left h1 {
+    font-size: 75px;
+    line-height: 80px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid white;
+}
+
+#sec1 .left p {
+    margin-top: 30px;
+}
+
+#sec1 .left p span {
+    border-bottom: 3px solid crimson;
+}
+
+#sec1 .right {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+#sec1 .right img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Section - 2 */
+#sec2 {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 50%), url(/images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+#sec2 .heading {
+    text-align: center;
+}
+
+#sec2 .heading h5 {
+    font-size: 24px;
+}
+
+#sec2 .heading h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.boxes {
+    width: 620px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    width: 300px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.box:last-child {
+    width: 610px;
+}
+
+.box h2 {
+    color: crimson;
+    text-shadow: 2px 2px 10px black;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.box p {
+    font-size: 18px;
+}
+
+/* Section - 3 */
+#sec3 {
+    background-image: url(/images/sec-3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+#sec3 .left {
+    max-width: 450px;
+}
+
+#sec3 .left h3 {
+    font-size: 24px;
+}
+
+#sec3 .left h1 {
+    font-size: 80px;
+}
+
+#sec3 .left p {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#sec3 .left button {
+    border: none;
+    background-color: crimson;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#sec3 .left button:hover {
+    color: crimson;
+    background-color: black;
+}
+
+#sec3 .right {
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 40px;
+}
+
+.card {
+    border: 1px solid gray;
+    width: 450px;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+
+.person-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.info-detail {
+
+}
+
+.info-detail h1 {
+    color: crimson;
+}
+
+small {
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media (max-width:1500px) {
+    #sec1 .right {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+@media (max-width:1100px) {
+    #sec1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #sec1 .left h1 {
+        font-size: 40px;
+        line-height: 35px;
+        padding-bottom: 15px;
+        border-bottom: 5px solid white;
+    }
+
+    #sec1 .right {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    #sec3 {
+        flex-direction: column;
+    }
+
+    #sec3 .right {
+        align-items: center;
+    }
+
+    .card:nth-child(2) {
+        align-self: center;
+    }
+}
